@@ -2,7 +2,7 @@
  
  ###  Answer the following questions clearly:
  1. `What is the difference between` **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-    **getElementById**: Works very fast for IDs only.Returns the element with a specified ID.works most directly.
+    **getElementById:** Works very fast for IDs only.Returns the element with a specified ID.works most directly.
     *example:*
     `const title = document.getElementById("main-title");`
     
