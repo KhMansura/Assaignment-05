@@ -2,7 +2,7 @@
  
  ###  Answer the following questions clearly:
  1. `What is the difference between` **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-    **getElementById:** Works very fast for IDs only.Returns the element with a specified ID.works most directly.
+    **getElementById**: Works very fast for IDs only.Returns the element with a specified ID.works most directly.
     *example:*
     `const title = document.getElementById("main-title");`
     
@@ -16,7 +16,7 @@
       **querySelectorAll**: Returns a static NodeList (does not update even if the DOM changes).
       `const allCards = document.querySelectorAll(".card");`
 
-3.  `How do you` **create and insert a new element into the DOM**?
+2. `How do you` **create and insert a new element into the DOM**?
 
    **DOM**: DOM stands for Document Object Model.Which defines the logical structure of an HTML document. For JavaScript it defines: The HTML DOM is an API (Programming Interface).
        **To create an element, follow these steps**:
