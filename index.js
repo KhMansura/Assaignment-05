@@ -77,7 +77,7 @@ for (let i = 0; i < copyBtn.length; i++) {
       .then(function()  {
         copyCount++;
         copyNum.innerText = copyCount;
-        alert(`Number Copied ${serviceNumber}`);
+        alert(`Number Copied: ${serviceNumber}`);
       })
 
     })
