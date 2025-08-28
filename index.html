@@ -26,46 +26,47 @@
     <header class="bg-white">
       <!-- navbar -->
       <div
-        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3"
-      >
-        <div class="flex items-center gap-3">
+        class="max-w-7xl mx-auto px-4 py-6 text-center">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
+        
+        <div class="flex items-center gap-3 ">
           <img src="./assets/logo.png" alt="" class="h-12" />
-          <h1 class="text-xl sm:text-xl font-bold text-[#006747]">
+          <h1 class="text-xl font-bold text-[#006747]">
             Emergency<br />Service
           </h1>
         </div>
-        <div class="flex items-center gap-4">
-          <div class="">
-            <span
+
+        <div class="flex flex-wrap sm:flex-nowrap items-center gap-4">
+          <div
               id="heart-count"
-              class="badge h-10 rounded-full px-5 bg-base-200"
-              >0 <img src="./assets/heart.png" alt="" class="h-6"
-            /></span>
+              class="badge h-10 rounded-full px-5 bg-base-200">
+              <span id="heart-num">0</span>
+              <img src="./assets/heart.png" alt="" class="h-6"/>
           </div>
-          <div class="flex items-center">
-            <span id="coin-count" class="badge h-10 rounded-full bg-base-200"
-              >100<img src="./assets/coin.png" alt="" class="h-6"
-            /></span>
+
+          <div class="flex items-center gap-2 badge h-10 rounded-full bg-base-200 ">
+            <!-- <span id="coin-count"> -->
+                <span id="coin-num">100</span>
+            <img src="./assets/coin.png" alt="" class="h-6"/>
+            </span>
           </div>
-          <div class="">
+          
             <button
               id="copy-count"
-              class="btn rounded-full bg-[#00a63e] text-white h-10 py-3 p-6"
-            >
-              2 Copy
+              class="btn rounded-full bg-[#00a63e] text-white h-10 py-3 p-6 flex items-center gap-2">
+              <span id="copy-num">0</span> Copy
             </button>
-          </div>
         </div>
       </div>
       <!-- banner(hero) -->
       <div
         id="banner"
-        class="px-15 py-3 bg-gradient-to-r from-green-900 via-green-700 to-green-900 min-h-[40vh] text-white flex flex-col justify-center items-center text-center"
+        class="px-4 py-6 bg-gradient-to-r from-green-900 via-green-700 to-green-900 min-h-[40vh] text-white flex flex-col justify-center items-center text-center"
       >
         <img src="./assets/logo-dark.png" alt="" class="h-25 mb-4" />
 
-        <h1 class="font-bold text-3xl">Emergency Service Directory</h1>
-        <p class="mt-2 mb-2">
+        <h1 class="text-xl font-bold sm:text-3xl max-w-[250px] sm:max-w-full text-center">Emergency Service Directory</h1>
+        <p class="mt-2 text-[12px] sm:text-base sm:mt-4 mx-auto max-w-[300px] sm:max-w-full text-center">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>

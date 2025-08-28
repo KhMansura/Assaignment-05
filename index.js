@@ -1,10 +1,6 @@
 let heartCount = 0;
 let coinCount = 100;
-
-// navbar feature
-
-const heartAct = document.getElementById("heart-count");
-const coinAct = document.getElementById("coin-count")
+let copyCount = 0;
 
 // history
 const history = document.getElementById("history-list")
@@ -12,16 +8,18 @@ const clearHistory = document.getElementById("clear-history")
 
 // heart
 const heartBtn = document.querySelectorAll(".heart-btn")
+const heartNum = document.getElementById("heart-num")
 
 for(let i = 0; i < heartBtn.length; i++) {
   heartBtn[i].addEventListener("click", function () {
     heartCount++;
-    heartAct.innerText = heartCount;
+    heartNum.innerText = heartCount;
   })
 }
 
 // call
 const callBtn = document.querySelectorAll(".call-btn");
+const coinNum = document.getElementById("coin-num")
 
 for (let i = 0; i < callBtn.length; i++) {
   callBtn[i].addEventListener("click", function () {
@@ -35,13 +33,12 @@ for (let i = 0; i < callBtn.length; i++) {
     }
 
     coinCount -= 20;
-    coinAct.innerText = coinCount
+    coinNum.innerText = coinCount
     alert( "📞 Calling " + serviceName + " at " + serviceNumber + "...")
 // Add to history
     const li = document.createElement("li");
     const time = new Date().toLocaleTimeString();
-    // li.innerText = `${serviceName}  ${serviceNumber} ${time}`;
-    // history.appendChild(li);
+
      li.className = "bg-gray-100 rounded-lg px-4 py-2 mb-2 flex justify-between items-start"
     
     const left = document.createElement("div");
@@ -66,11 +63,10 @@ clearHistory.addEventListener("click", function () {
   history.innerHTML = "";
 }) 
 
-// copy button
-let copyCount = 0;
-const copyAct = document.querySelectorAll("copy-count")
 
+// copy button
 const copyBtn = document.querySelectorAll(".copy-btn");
+const copyNum = document.getElementById("copy-num")
 
 for (let i = 0; i < copyBtn.length; i++) {
   copyBtn[i].addEventListener("click", function () {
@@ -78,9 +74,9 @@ for (let i = 0; i < copyBtn.length; i++) {
     const serviceNumber = card.querySelector(".service-number").innerText;
 
     navigator.clipboard.writeText(serviceNumber)
-      .then(() => {
+      .then(function()  {
         copyCount++;
-        copyAct.innerText = copyCount;
+        copyNum.innerText = copyCount;
         alert(`Number Copied ${serviceNumber}`);
       })
 
